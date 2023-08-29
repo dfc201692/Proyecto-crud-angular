@@ -1,0 +1,20 @@
+<form #userForm="ngForm" (ngSubmit)="submitForm(userForm)">
+    <div class="mb-3">
+      <label for="firstName" class="form-label">First Name</label>
+      <input type="text" id="firstName" name="firstName" class="form-control" [(ngModel)]="user.firstName" required>
+    </div>
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Last Name</label>
+      <input type="text" id="lastName" name="lastName" class="form-control" [(ngModel)]="user.lastName" required>
+    </div>
+    <div class="mb-3">
+      <label for="document" class="form-label">Document</label>
+      <input type="text" id="document" name="document" class="form-control" [(ngModel)]="user.document" required>
+    </div>
+    <div class="mb-3">
+      <label for="birthDate" class="form-label">Birth Date</label>
+      <input type="date" id="birthDate" name="birthDate" class="form-control" [(ngModel)]="user.birthDate" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
